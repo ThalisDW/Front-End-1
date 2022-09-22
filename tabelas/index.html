@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black; /*espessura, tipo e cor*/
+        padding: 5px; /*espaçamento interno dentro da caixa*/
+        /* border-collapse: collapse; /*recolhe as bordas*/
+      }
+    </style>
+    <!-- TABELAS -->
+    <table border="1px;">
+      <!-- Titulo da tabela -->
+      <caption>
+        Lista de Growdevers
+      </caption>
+      <!-- TR linha -->
+      <tr>
+        <!-- TH tem mais enfase  -->
+        <!-- TD células/coluna -->
+        <th>Nome</th>
+        <td>Julião</td>
+      </tr>
+    </table>
+    <hr />
+    <table style="width: 100%">
+      <colgroup> <!-- estilização -->
+        <col style="background-color: blue" />
+        <col style="background-color: red" />
+      </colgroup>
+      <caption>
+        Lita de Growdevers
+      </caption>
+      <thead>
+        <!-- Cabeçlho da tabela -->
+        <tr>
+          <th scope="colgroup">Nome</th>
+          <th style="background-color: violet;">Sobrenome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Corpo/conteudo da tabela -->
+        <tr>
+          <td>João</td>
+          <td colspan="2">Silva</td>
+        </tr>
+
+        <tr>
+          <td>Pedro</td>
+          <td>Martins</td>
+          <td rowspan="2">80</td>
+          <!--  ROWSPAN é preencher para baixo -->
+        </tr>
+        <tr>
+          <td>Alves</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- Rodapé da tabela -->
+        <tr>
+          <td colspan="3">teste</td>
+          <!-- COLSPAN é preencher para o lado -->
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
